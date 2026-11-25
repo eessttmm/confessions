@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#FFF7E6">
+  <title>Admin · St. Thomas Confessions</title>
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">St.Thomas<span>.</span></a>
+  </header>
+
+  <main class="container admin-container">
+    <section class="hero">
+      <p class="eyebrow">PRIVATE AREA.</p>
+      <h1>Admin <span>dashboard.</span></h1>
+      <p class="subheading">Sign in with the administrator account to hide or delete confessions.</p>
+    </section>
+
+    <section id="loginPanel" class="panel login-panel">
+      <label for="email">Admin email</label>
+      <input id="email" type="email" autocomplete="username" placeholder="admin@gmail.com">
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" placeholder="Password">
+      <button id="loginButton" class="button full" type="button">Sign in</button>
+      <p id="loginMessage" class="message" role="status" aria-live="polite"></p>
+      <p class="small-note">Only the configured administrator email is authorized.</p>
+    </section>
+
+    <section id="dashboard" hidden>
+      <div class="dashboard-bar">
+        <p id="signedInAs" class="small-note"></p>
+        <button id="logoutButton" class="text-button" type="button">Sign out</button>
+      </div>
+      <div class="stats">
+        <div class="stat panel"><strong id="totalCount">0</strong><span>Total submissions</span></div>
+        <div class="stat panel"><strong id="visibleCount">0</strong><span>Visible on main page</span></div>
+        <div class="stat panel"><strong id="hiddenCount">0</strong><span>Hidden</span></div>
+      </div>
+      <div class="section-heading">
+        <div><p class="eyebrow">INBOX</p><h2>All submissions</h2></div>
+        <button id="adminRefresh" class="text-button" type="button">Refresh ↻</button>
+      </div>
+      <div id="adminFeed" class="feed"><div class="empty panel">Loading…</div></div>
+    </section>
+  </main>
+
+  <script type="module" src="admin.js?v=6"></script>
+</body>
+</html>
