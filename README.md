@@ -1,4 +1,4 @@
-CLASS CONFESSIONS — SETUP
+ CONFESSIONS — SETUP
 
 Included:
 - index.html: public confession wall and submission form
