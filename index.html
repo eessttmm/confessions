@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#FFF7E6">
+  <title>St. Thomas Confessions</title>
+  <meta name="description" content="Say it anonymously. Thoughts, compliments, stories and confessions from St. Thomas.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="St. Thomas Confessions">
+  <meta property="og:title" content="St. Thomas Confessions | Say it anonymously">
+  <meta property="og:description" content="Say it anonymously. Thoughts, compliments, stories and confessions from St. Thomas.">
+  <meta property="og:image" content="https://eceeey.github.io/confessions/image.jpg">
+  <meta property="og:image:alt" content="St. Thomas Confessions - Say it anonymously.">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="St. Thomas Confessions | Say it anonymously">
+  <meta name="twitter:description" content="Say it anonymously. Thoughts, compliments, stories and confessions from St. Thomas.">
+  <meta name="twitter:image" content="https://eceeey.github.io/confessions/image.jpg">
+  
+  <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">St.Thomas<span>.</span></a>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">ST. THOMAS · YOUR SPACE</p>
+      <h1>Say it <span>anonymously.</span></h1>
+      <p class="subheading">Thoughts, compliments, stories and confessions from St. Thomas.</p>
+    </section>
+
+    <section class="composer panel">
+      <label for="confession">Write your confession</label>
+      <textarea id="confession" maxlength="1000" placeholder="Type something..." rows="4"></textarea>
+      <div class="composer-bottom">
+        <span id="counter">0 / 1000</span>
+        <button id="postButton" class="button" type="button">Post confession <span aria-hidden="true">↗</span></button>
+      </div>
+      <p class="notice">St. Thomas Confessions</p>
+      <p id="formMessage" class="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="feed-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE WALL</p>
+          <h2>Recent confessions</h2>
+        </div>
+        <button id="refreshButton" class="text-button" type="button">Refresh ↻</button>
+      </div>
+      <div id="feed" class="feed">
+        <div class="empty panel">Loading confessions…</div>
+      </div>
+    </section>
+    <footer>© 2026 St. Thomas</footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+  <script>
+    twemoji.parse(document.body, { folder: 'svg', ext: '.svg' });
+  </script>
+  <script type="module" src="app.js?v=6"></script>
+</body>
+</html>
