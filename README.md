@@ -11,4 +11,4 @@ IMPORTANT DESIGN
 - submissions are fully anonymous
 - Moderate submissions. Do not publish threats, bullying, private information, or targeted harassment.
 
-© 2026 ecees
+
